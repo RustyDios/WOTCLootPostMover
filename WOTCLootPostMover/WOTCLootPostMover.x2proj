@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>600d8506-48d4-4fa9-bde5-5a6b49c22764</Guid>
+    <Name>WOTCLootPostMover</Name>
+    <Description>The aim of this mod is to split the loot drop posts from the center of the drop zone to the fore and aft edges, so that should you get a Psi/Focus Loot in the same spot as a Vulture/Timed Loot, both are easily visable.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTCLootPostMover</AssemblyName>
+    <RootNamespace>WOTCLootPostMover</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTCLootPostMover\" />
+    <Folder Include="Src\WOTCLootPostMover\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComLootPostMover.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\LootableGoalPostsMoved.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\WOTCLootPostMover\Classes\X2DownloadableContentInfo_WOTCLootPostMover.uc" />
+    <Content Include="Src\WOTCLootPostMover\Classes\XComGameState_LootDropSplitter.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
